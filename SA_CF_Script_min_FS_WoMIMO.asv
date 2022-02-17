@@ -1,0 +1,25 @@
+
+close all
+clear all
+clc
+%%
+
+% PST = zeros(7,10);
+
+load('InitialParam_MCF71.mat') % Rs = 32 GBaud
+
+% load adjacent_core_matx
+
+
+PST = [1 0 0 0 1 0 0 0 0 0;
+       1 0 0 0 0 1 1 1 1 1;
+       0 0 1 0 0 1 0 0 0 0;
+       1 0 1 0 0 1 0 0 0 0;
+       0 0 1 0 0 0 0 0 0 0;
+       0 1 0 0 0 0 0 1 0 0;
+       1 0 0 0 1 0 0 0 0 0];
+   
+[num_cores,num_FS] = size(PST);   
+   
+
+{core_count}
